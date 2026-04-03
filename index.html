@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arnold Fitness Vijayanagar | Premium Gym in Mysuru</title>
+  <meta name="description" content="Arnold Fitness Vijayanagar – Mysuru's premier gym offering personal training, weight loss, strength training & more. Rated 4.8★ by 554 members." />
+  <meta name="keywords" content="gym mysuru, fitness center vijayanagar, personal training mysore, weight loss gym mysuru, arnold fitness" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arnold Fitness Vijayanagar | Premium Gym in Mysuru" />
+  <meta property="og:description" content="Transform your body at Mysuru's top-rated gym. 4.8★ · 554 reviews · Kalidasa Rd, Vijayanagar." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20hero%20inside.webp" />
+  <meta property="og:type" content="website" />
+
+  <!-- Security Headers (meta equiv) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://raw.githubusercontent.com data:; frame-src https://www.google.com; script-src 'self' 'unsafe-inline'; connect-src 'self';" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20logo.jpeg" alt="Arnold Fitness Logo" class="logo-img" />
+        <span class="logo-text">Arnold Fitness</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Programs</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/arnoldfitnessmysuru?igsh=MWp1ZjcyN3h5Ym4yZQ==" target="_blank" rel="noopener noreferrer" class="nav-insta" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20interested%20in%20joining%20Arnold%20Fitness%20Vijayanagar.%20Please%20share%20membership%20details." class="btn-primary" target="_blank" rel="noopener noreferrer">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20hero%20inside.webp" alt="Arnold Fitness Gym Interior" class="hero-img" fetchpriority="high" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span id="liveStatus" class="status-dot">●</span>
+        <span id="liveStatusText">Checking hours…</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line">FORGE YOUR</span>
+        <span class="title-line accent">STRONGEST SELF</span>
+      </h1>
+      <p class="hero-sub">Mysuru's most trusted fitness destination — where serious results happen.</p>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>4.8★</strong>
+          <span>554 Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>10+</strong>
+          <span>Years Strong</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>500+</strong>
+          <span>Active Members</span>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="https://wa.me/917349788244?text=Hi%2C%20I%20want%20to%20join%20Arnold%20Fitness%20Vijayanagar.%20My%20name%20is%20____%20and%20I%27m%20interested%20in%20a%20membership." class="btn-primary large" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp to Join
+        </a>
+        <a href="tel:+917349788244" class="btn-outline large">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Us
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ABOUT / WHY US
+  ══════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text fade-up">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Built for <em>Real</em> Results</h2>
+          <p>Arnold Fitness Vijayanagar is Mysuru's most trusted gym — a place where beginners get their footing and athletes push beyond limits. Located on Kalidasa Road, we've been transforming bodies and building confidence for over a decade.</p>
+          <p>With expert trainers, modern equipment, and a community that pushes you forward — this is where your journey changes.</p>
+
+          <div class="about-highlights">
+            <div class="highlight">
+              <div class="highlight-icon">🏋️</div>
+              <div>
+                <strong>World-Class Equipment</strong>
+                <span>Free weights, machines, cardio zone & more</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">👨‍🏫</div>
+              <div>
+                <strong>Expert Certified Trainers</strong>
+                <span>Personalized attention for every member</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">📍</div>
+              <div>
+                <strong>Prime Location</strong>
+                <span>Kalidasa Rd, Vijayanagar 1st Stage, Mysuru</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual fade-up delay-1">
+          <div class="about-card">
+            <div class="rating-big">4.8</div>
+            <div class="stars">★★★★★</div>
+            <div class="reviews-count">554 Google Reviews</div>
+            <div class="divider"></div>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span>Mon – Sat</span>
+                <strong>5:30 AM – 9:30 PM</strong>
+              </div>
+              <div class="hours-row">
+                <span>Sunday</span>
+                <strong>7:00 AM – 11:00 AM</strong>
+              </div>
+            </div>
+            <a href="tel:+917349788244" class="btn-primary full">📞 073497 88244</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SERVICES / PROGRAMS
+  ══════════════════════════════════════ -->
+  <section class="section services dark-section" id="services">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label light">What We Offer</span>
+        <h2 class="section-title light">Programs Built to <em>Transform</em></h2>
+        <p class="section-sub light">Every program is designed and delivered by certified professionals</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card fade-up" data-wa="Weight+Loss+Training">
+          <div class="service-icon">🔥</div>
+          <h3>Weight Loss Training</h3>
+          <p>Science-backed fat-loss programs combining cardio, strength, and nutrition coaching for sustainable results.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="service-card fade-up delay-1" data-wa="Personal+Training">
+          <div class="service-icon">🎯</div>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions with certified trainers tailored to your unique body type, goals, and schedule.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="service-card fade-up delay-2" data-wa="Strength+Training">
+          <div class="service-icon">💪</div>
+          <h3>Strength Training</h3>
+          <p>Progressive overload programs designed to build lean muscle, increase power, and improve overall athleticism.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="service-card fade-up" data-wa="Group+Classes">
+          <div class="service-icon">🏃</div>
+          <h3>Group Classes</h3>
+          <p>High-energy group sessions that keep you motivated — from HIIT and circuit training to functional fitness.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="service-card fade-up delay-1" data-wa="Nutrition+Guidance">
+          <div class="service-icon">🥗</div>
+          <h3>Nutrition Guidance</h3>
+          <p>Customized diet plans by our in-house nutrition experts to complement your training and accelerate results.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="service-card fade-up delay-2" data-wa="Cardio+Zone">
+          <div class="service-icon">🚴</div>
+          <h3>Cardio Zone</h3>
+          <p>Fully equipped cardio area with treadmills, ellipticals, bikes and more to maximize your endurance training.</p>
+          <a href="#" class="service-cta wa-service">Enquire →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PRICING
+  ══════════════════════════════════════ -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Membership Plans</span>
+        <h2 class="section-title">Invest in <em>Yourself</em></h2>
+        <p class="section-sub">Flexible plans for every goal. Contact us for exact pricing and current offers.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card fade-up">
+          <div class="plan-badge">Starter</div>
+          <h3>Monthly</h3>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">Contact Us</span>
+          </div>
+          <ul class="plan-features">
+            <li>✅ Full Gym Access</li>
+            <li>✅ Locker Room</li>
+            <li>✅ Basic Trainer Guidance</li>
+            <li>✅ Cardio Zone</li>
+          </ul>
+          <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20interested%20in%20the%20Monthly%20membership%20at%20Arnold%20Fitness%20Vijayanagar.%20Please%20share%20details%20and%20pricing." class="btn-primary full" target="_blank" rel="noopener noreferrer">Get Started</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="pricing-card featured fade-up delay-1">
+          <div class="plan-badge popular">Most Popular</div>
+          <h3>Quarterly</h3>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">Best Value</span>
+          </div>
+          <ul class="plan-features">
+            <li>✅ Full Gym Access</li>
+            <li>✅ Personal Training (4 sessions)</li>
+            <li>✅ Nutrition Guidance</li>
+            <li>✅ Group Classes</li>
+            <li>✅ Body Composition Check</li>
+          </ul>
+          <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20interested%20in%20the%20Quarterly%20membership%20at%20Arnold%20Fitness%20Vijayanagar.%20Please%20share%20details%20and%20pricing." class="btn-primary full" target="_blank" rel="noopener noreferrer">Join Now →</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+        <div class="pricing-card fade-up delay-2">
+          <div class="plan-badge">Best Deal</div>
+          <h3>Annual</h3>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">Max Savings</span>
+          </div>
+          <ul class="plan-features">
+            <li>✅ All Quarterly Benefits</li>
+            <li>✅ Unlimited PT Sessions</li>
+            <li>✅ Custom Diet Plan</li>
+            <li>✅ Priority Scheduling</li>
+            <li>✅ Free Month on Renewal</li>
+          </ul>
+          <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20interested%20in%20the%20Annual%20membership%20at%20Arnold%20Fitness%20Vijayanagar.%20Please%20share%20details%20and%20pricing." class="btn-primary full" target="_blank" rel="noopener noreferrer">Get Started</a>
+          <!-- Editable / Replace Later -->
+        </div>
+
+      </div>
+
+      <p class="pricing-note fade-up">💬 Payment & confirmation handled directly at the gym. <a href="https://wa.me/917349788244?text=Hi%2C%20I%20have%20a%20question%20about%20membership%20pricing%20at%20Arnold%20Fitness%20Vijayanagar." target="_blank" rel="noopener noreferrer">WhatsApp us</a> for current offers.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════ -->
+  <section class="section gallery dark-section" id="gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label light">Inside the Gym</span>
+        <h2 class="section-title light">See the <em>Space</em></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item fade-up" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%201.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%201.webp" alt="Arnold Fitness Gallery 1" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-1" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%202.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%202.webp" alt="Arnold Fitness Gallery 2" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-2" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%203.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%203.webp" alt="Arnold Fitness Gallery 3" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%204.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%204.webp" alt="Arnold Fitness Gallery 4" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-1" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%205.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%205.webp" alt="Arnold Fitness Gallery 5" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-2" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%206.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%206.webp" alt="Arnold Fitness Gallery 6" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%207.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%207.webp" alt="Arnold Fitness Gallery 7" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-1" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%208.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%208.webp" alt="Arnold Fitness Gallery 8" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+        <div class="gallery-item fade-up delay-2" data-src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%209.webp">
+          <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20gallery%209.webp" alt="Arnold Fitness Gallery 9" loading="lazy" />
+          <div class="gallery-overlay"><span>View</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-inner">
+      <img id="lightboxImg" src="" alt="Gallery Image" />
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       REVIEWS / TESTIMONIALS
+  ══════════════════════════════════════ -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Member Stories</span>
+        <h2 class="section-title">What Our <em>Members</em> Say</h2>
+        <div class="rating-summary">
+          <span class="big-rating">4.8</span>
+          <div>
+            <div class="stars-row">★★★★★</div>
+            <span>Based on 554 Google Reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Editable / Replace Later -->
+        <div class="review-card fade-up">
+          <div class="review-stars">★★★★★</div>
+          <p>"Best gym in Mysuru! The trainers are incredibly knowledgeable and the equipment is always well-maintained. Lost 12 kg in 4 months!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">R</div>
+            <div>
+              <strong>Rahul M.</strong>
+              <span>Member since 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p>"The personal trainers here are amazing. They gave me a customized plan and I've seen incredible results in just 3 months. Highly recommended!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">P</div>
+            <div>
+              <strong>Priya S.</strong>
+              <span>Member since 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p>"Arnold Fitness is a gem in Vijayanagar. Clean, spacious, and with excellent trainers. The morning batch is perfect. Love the community here!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">K</div>
+            <div>
+              <strong>Kiran A.</strong>
+              <span>Member since 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up">
+          <div class="review-stars">★★★★★</div>
+          <p>"Started as a complete beginner. The team was patient, supportive, and helped me build a consistent routine. Best decision I ever made!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <strong>Sneha R.</strong>
+              <span>Member since 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p>"Great infrastructure, well-trained staff, and an amazing atmosphere. Whether you're into cardio or heavy lifting — this gym has it all."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">V</div>
+            <div>
+              <strong>Vijay N.</strong>
+              <span>Member since 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-up delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p>"The nutrition guidance alongside the workout plan helped me gain lean muscle and improve my diet. Very professional and result-oriented gym."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <strong>Arjun T.</strong>
+              <span>Member since 2023</span>
+            </div>
+          </div>
+        </div>
+        <!-- Editable / Replace Later -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA BAND
+  ══════════════════════════════════════ -->
+  <section class="cta-band dark-section">
+    <div class="container">
+      <div class="cta-band-inner fade-up">
+        <div>
+          <h2>Ready to Start Your Transformation?</h2>
+          <p>Join Mysuru's most trusted fitness community today.</p>
+        </div>
+        <div class="cta-band-buttons">
+          <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20ready%20to%20start%20my%20fitness%20journey%20at%20Arnold%20Fitness%20Vijayanagar.%20Please%20guide%20me%20on%20the%20next%20steps." class="btn-primary large" target="_blank" rel="noopener noreferrer">WhatsApp to Join</a>
+          <a href="tel:+917349788244" class="btn-outline large">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Get in <em>Touch</em></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-up">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Kalidasa Rd, Vijayanagar 1st Stage,<br>Vijayanagar, Mysuru, Karnataka 570017</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+917349788244">073497 88244</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Sat: 5:30 AM – 9:30 PM<br>Sunday: 7:00 AM – 11:00 AM</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📸</div>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/arnoldfitnessmysuru?igsh=MWp1ZjcyN3h5Ym4yZQ==" target="_blank" rel="noopener noreferrer">@arnoldfitnessmysuru</a>
+            </div>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="https://wa.me/917349788244?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20Arnold%20Fitness%20Vijayanagar.%20My%20name%20is%20____%20and%20I%20have%20a%20question." class="btn-primary" target="_blank" rel="noopener noreferrer">
+              WhatsApp Us
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=12.3052,76.6231" class="btn-outline" target="_blank" rel="noopener noreferrer">
+              Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container fade-up delay-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.2874!2d76.6231!3d12.3052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b4f23e3f3f3%3A0x0!2sArnold%20Fitness%20Vijayanagar!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Arnold Fitness Location on Google Maps">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- WhatsApp Form -->
+      <div class="enquiry-form fade-up">
+        <h3>Send a Quick Enquiry</h3>
+        <p>Fill in your details and we'll connect you on WhatsApp instantly.</p>
+        <div class="form-row">
+          <input type="text" id="formName" placeholder="Your Name" maxlength="50" />
+          <select id="formInterest">
+            <option value="Membership+Inquiry">Membership Inquiry</option>
+            <option value="Personal+Training">Personal Training</option>
+            <option value="Weight+Loss+Program">Weight Loss Program</option>
+            <option value="Nutrition+Guidance">Nutrition Guidance</option>
+            <option value="Group+Classes">Group Classes</option>
+          </select>
+        </div>
+        <button class="btn-primary large" onclick="sendWhatsAppEnquiry()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Send via WhatsApp
+        </button>
+        <p class="form-note">* Payment / confirmation will be handled directly at the gym.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <img src="https://raw.githubusercontent.com/chiranjitchakma/Arnold-Fitness/main/Arnold%20Fitness%20Vijayanagar%20logo.jpeg" alt="Arnold Fitness Logo" />
+            <span>Arnold Fitness</span>
+          </a>
+          <p>Vijayanagar's premier fitness destination. Transform your body, elevate your life.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/arnoldfitnessmysuru?igsh=MWp1ZjcyN3h5Ym4yZQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://wa.me/917349788244" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="tel:+917349788244" aria-label="Call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Programs</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-hours">
+          <h4>Gym Hours</h4>
+          <div class="footer-hours-list">
+            <div><span>Mon – Sat</span><strong>5:30 AM – 9:30 PM</strong></div>
+            <div><span>Sunday</span><strong>7:00 AM – 11:00 AM</strong></div>
+          </div>
+          <div id="footerStatus" class="footer-status"></div>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <p>📍 Kalidasa Rd, Vijayanagar 1st Stage, Mysuru 570017</p>
+          <p><a href="tel:+917349788244">📞 073497 88244</a></p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=12.3052,76.6231" class="btn-outline small" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Arnold Fitness Vijayanagar. All rights reserved.</p>
+        <p>Kalidasa Rd, Vijayanagar, Mysuru · <a href="tel:+917349788244">073497 88244</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       STICKY MOBILE BAR
+  ══════════════════════════════════════ -->
+  <div class="sticky-bar" id="stickyBar">
+    <a href="tel:+917349788244" class="sticky-btn call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/917349788244?text=Hi%2C%20I%27m%20interested%20in%20joining%20Arnold%20Fitness%20Vijayanagar." class="sticky-btn whatsapp" target="_blank" rel="noopener noreferrer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=12.3052,76.6231" class="sticky-btn directions" target="_blank" rel="noopener noreferrer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      <span>Directions</span>
+    </a>
+    <a href="https://wa.me/917349788244?text=Hi%2C%20I%20want%20to%20join%20Arnold%20Fitness%20Vijayanagar.%20Please%20share%20membership%20options." class="sticky-btn join" target="_blank" rel="noopener noreferrer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+      <span>Join Now</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
