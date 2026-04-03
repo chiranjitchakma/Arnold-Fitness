@@ -246,6 +246,17 @@ function initSmoothScroll() {
   });
 }
 
+/* ── DOCK TOGGLE (minimize / expand) ── */
+function initDockToggle() {
+  const bar    = document.getElementById('stickyBar');
+  const toggle = document.getElementById('dockToggle');
+  if (!bar || !toggle) return;
+
+  toggle.addEventListener('click', () => {
+    bar.classList.toggle('minimized');
+  });
+}
+
 /* ── BOOT ──────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
@@ -255,6 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initGallery();
   initServiceCTAs();
   initSmoothScroll();
+  initDockToggle();
 
   // Live status — run immediately, then every 60s
   updateLiveStatus();
