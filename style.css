@@ -840,9 +840,9 @@ input, select, button { font-family: inherit; }
 }
 .footer-bottom a { color: var(--gold); }
 
-/* ── FLOATING ACTION DOCK (right-side vertical) ── */
+/* ── FLOATING ACTION DOCK (right-side vertical, all devices) ── */
 .sticky-bar {
-  display: none;
+  display: flex;
   position: fixed;
   right: 16px;
   bottom: 50%;
@@ -850,8 +850,31 @@ input, select, button { font-family: inherit; }
   z-index: 999;
   flex-direction: column;
   gap: 6px;
-  align-items: center;
+  align-items: flex-end;
 }
+
+/* toggle button — sits above the pills */
+.dock-toggle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(20,20,20,0.9);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 2px;
+  align-self: flex-end;
+  transition: color var(--transition), border-color var(--transition);
+}
+.dock-toggle:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
+.dock-toggle svg { transition: transform 0.3s ease; }
+
+/* when minimized — hide all pills, flip chevron */
+.sticky-bar.minimized .sticky-btn { display: none; }
+.sticky-bar.minimized .dock-toggle svg { transform: rotate(180deg); }
 
 /* each pill button */
 .sticky-btn {
@@ -991,7 +1014,6 @@ input, select, button { font-family: inherit; }
   .cta-band-inner { flex-direction: column; align-items: flex-start; }
   .section { padding: 64px 0; }
 
-  .sticky-bar { display: flex; }
   body { padding-bottom: 0; }
 
   .lightbox-prev { left: 12px; }
