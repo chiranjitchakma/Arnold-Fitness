@@ -840,14 +840,14 @@ input, select, button { font-family: inherit; }
 }
 .footer-bottom a { color: var(--gold); }
 
-/* ── FLOATING ACTION DOCK (right-side vertical, all devices) ── */
+/* ── FLOATING ACTION DOCK (right-side vertical, ALL devices) ── */
 .sticky-bar {
-  display: flex;
+  display: flex !important;
   position: fixed;
   right: 16px;
   bottom: 50%;
   transform: translateY(50%);
-  z-index: 999;
+  z-index: 9999;
   flex-direction: column;
   gap: 6px;
   align-items: flex-end;
@@ -859,8 +859,8 @@ input, select, button { font-family: inherit; }
   height: 26px;
   border-radius: 50%;
   background: rgba(20,20,20,0.9);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.45);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -868,8 +868,9 @@ input, select, button { font-family: inherit; }
   margin-bottom: 2px;
   align-self: flex-end;
   transition: color var(--transition), border-color var(--transition);
+  pointer-events: all;
 }
-.dock-toggle:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
+.dock-toggle:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
 .dock-toggle svg { transition: transform 0.3s ease; }
 
 /* each pill button */
