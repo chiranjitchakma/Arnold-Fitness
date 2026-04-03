@@ -5,25 +5,25 @@
 ══════════════════════════════════════ */
 
 :root {
-  --black: #0a0a0a;
-  --dark: #111111;
-  --dark-2: #1a1a1a;
-  --dark-3: #222222;
+  --black: #080808;
+  --dark: #0e0e0e;
+  --dark-2: #161616;
+  --dark-3: #1e1e1e;
   --white: #ffffff;
-  --off-white: #f0ece6;
-  --gold: #d4a017;
-  --gold-light: #e8b830;
-  --gold-dim: rgba(212, 160, 23, 0.15);
-  --red: #c0392b;
-  --text: #e8e3db;
-  --text-muted: #8a8278;
-  --border: rgba(212, 160, 23, 0.2);
+  --off-white: #f2eeea;
+  --gold: #e03131;
+  --gold-light: #f03e3e;
+  --gold-dim: rgba(224, 49, 49, 0.12);
+  --red: #e03131;
+  --text: #e6e1db;
+  --text-muted: #7a7570;
+  --border: rgba(224, 49, 49, 0.22);
   --radius: 4px;
   --radius-lg: 10px;
   --nav-height: 72px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow: 0 8px 40px rgba(0,0,0,0.4);
-  --shadow-gold: 0 4px 24px rgba(212, 160, 23, 0.25);
+  --shadow: 0 8px 40px rgba(0,0,0,0.5);
+  --shadow-gold: 0 4px 24px rgba(224, 49, 49, 0.3);
 }
 
 /* ── RESET ─────────────────────────── */
@@ -840,38 +840,95 @@ input, select, button { font-family: inherit; }
 }
 .footer-bottom a { color: var(--gold); }
 
-/* ── STICKY MOBILE BAR ─────────────────────────── */
+/* ── FLOATING ACTION DOCK (right-side vertical) ── */
 .sticky-bar {
   display: none;
   position: fixed;
-  bottom: 0; left: 0; right: 0;
+  right: 16px;
+  bottom: 50%;
+  transform: translateY(50%);
   z-index: 999;
-  background: var(--black);
-  border-top: 1px solid var(--border);
-  grid-template-columns: repeat(4, 1fr);
-  box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
 }
+
+/* each pill button */
 .sticky-btn {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+  overflow: hidden;
+  height: 52px;
+  border-radius: 26px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  /* collapsed: just icon */
+  width: 52px;
+  transition: width 0.35s cubic-bezier(0.4,0,0.2,1),
+              box-shadow 0.25s ease,
+              transform 0.25s ease;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+.sticky-btn:hover {
+  width: 148px;
+  transform: scale(1.04);
+}
+.sticky-btn:active { transform: scale(0.97); }
+
+/* icon circle always visible on right */
+.sticky-btn .sb-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 10px 6px;
+  position: relative;
+  z-index: 1;
+  order: 2;
+}
+/* label slides in from left */
+.sticky-btn .sb-label {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.7);
-  transition: color var(--transition), background var(--transition);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.25s ease 0.05s, transform 0.25s ease 0.05s;
+  order: 1;
+  padding-left: 16px;
+  padding-right: 4px;
+  color: var(--white);
 }
-.sticky-btn:active { background: rgba(255,255,255,0.05); }
-.sticky-btn.call { color: #4fc3f7; }
-.sticky-btn.whatsapp { color: #4caf50; }
-.sticky-btn.directions { color: #ff8a65; }
-.sticky-btn.join { background: var(--gold); color: var(--black); }
-.sticky-btn.join:active { background: var(--gold-light); }
+.sticky-btn:hover .sb-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* CALL — steel blue */
+.sticky-btn.call { background: #1565c0; }
+.sticky-btn.call .sb-icon { background: #1976d2; color: #fff; }
+
+/* WHATSAPP — forest green */
+.sticky-btn.whatsapp { background: #1b5e20; }
+.sticky-btn.whatsapp .sb-icon { background: #2e7d32; color: #fff; }
+
+/* DIRECTIONS — burnt orange */
+.sticky-btn.directions { background: #bf360c; }
+.sticky-btn.directions .sb-icon { background: #d84315; color: #fff; }
+
+/* JOIN — punchy red (brand accent) */
+.sticky-btn.join { background: var(--gold); }
+.sticky-btn.join .sb-icon { background: var(--gold-light); color: #fff; }
+.sticky-btn.join .sb-label { color: #fff; font-size: 0.82rem; }
 
 /* ── SCROLL ANIMATIONS ─────────────────────────── */
 .fade-up {
@@ -934,8 +991,8 @@ input, select, button { font-family: inherit; }
   .cta-band-inner { flex-direction: column; align-items: flex-start; }
   .section { padding: 64px 0; }
 
-  .sticky-bar { display: grid; padding-bottom: env(safe-area-inset-bottom, 0px); }
-  body { padding-bottom: 70px; }
+  .sticky-bar { display: flex; }
+  body { padding-bottom: 0; }
 
   .lightbox-prev { left: 12px; }
   .lightbox-next { right: 12px; }
